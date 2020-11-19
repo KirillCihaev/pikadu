@@ -1,0 +1,122 @@
+@media (max-width: 990px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        margin-left: 12px;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 94px;
+    }
+
+    .menu-toggle span {
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .sidebar {
+        /**display: none;**/
+        position: fixed;
+        z-index: 101;
+        top: 64px;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        max-width: 380px;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+        transform: translateX(100%);
+        transition: transform 0.4s;
+        overflow-y: scroll;
+    }
+
+    .sidebar.visible {
+        transform: translateX(0);
+        /**display: block;**/
+        box-shadow: -25px 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .promo {
+        margin-bottom: 65px;
+    }
+
+    .posts {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .add-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-botton {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .button-outline {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .header-nav {
+        display: none;
+        /**margin-left: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fa8c16;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);**/
+    }
+
+    .header-menu {
+        width: 90%;
+        margin: auto;
+    }
+
+    .content {
+        margin-bottom: 60px;
+    }
+
+    .post-footer {
+        flex-direction: column;
+    }
+
+    .post-author {
+        margin-top: 15px;
+    }
+
+    .author-avatar {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .author-about {
+        order: 2;
+        text-align: left;
+    }
+}
