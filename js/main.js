@@ -73,7 +73,7 @@ const setUsers = {
     },
     editUser(userName, userPhotoURL, handler) {
         if(userName) {
-            this.user.displayName = userNameElem;
+            this.user.displayName = userNameElem.innerHTML;
         }
         if(userPhotoURL) {
             this.user.photo = userPhotoURL;
